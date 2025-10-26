@@ -1,0 +1,14 @@
+{
+  "name": "folklore_32chronicles_32rpg_32prototype_32_45_32copy",
+  "displayName": "Folklore Chronicles RPG Prototype - Copy",
+  "version": "1.0.0",
+  "description": "Folklore Chronicles RPG Prototype - Copy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": ""
+}
