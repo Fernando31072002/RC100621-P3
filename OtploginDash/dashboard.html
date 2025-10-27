@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OTP Auth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal del dashboard -->
+    <div class="container">
+        <div class="card dashboard">
+            <!-- Encabezado con información del usuario -->
+            <div class="dashboard-header">
+                <h1>🎮 Dashboard de Juego</h1>
+                <p class="welcome-text">Bienvenido, <span id="userEmail"></span></p>
+            </div>
+            
+            <!-- Sección de balance de monedas -->
+            <div class="coins-section">
+                <div class="coin-display">
+                    <span class="coin-icon">🪙</span>
+                    <span class="coin-amount" id="coinBalance">5000</span>
+                    <span class="coin-label">monedas</span>
+                </div>
+            </div>
+            
+            <!-- Botón para jugar el juego -->
+            <div class="game-section">
+                <a href="https://gd.games/games/a9afd93f-5b27-45ab-bf47-dfc343d1c307" 
+                   target="_blank" 
+                   class="btn btn-game">
+                    🎯 Jugar Ahora
+                </a>
+            </div>
+            
+            <!-- Sección de consejos aleatorios de IA -->
+            <div class="tips-section">
+                <h2>💡 Consejos del Día</h2>
+                <div id="tipsContainer" class="tips-container">
+                    <!-- Los consejos se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Botón de logout -->
+            <div class="logout-section">
+                <button id="logoutBtn" class="btn btn-logout">🚪 Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

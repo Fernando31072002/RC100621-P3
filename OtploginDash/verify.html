@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar OTP - OTP Auth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal para la página de verificación -->
+    <div class="container">
+        <div class="card">
+            <!-- Encabezado con instrucciones -->
+            <h1>🔑 Verificar Código</h1>
+            <p class="subtitle">Ingresa el código OTP de 6 dígitos</p>
+            
+            <!-- Mostrar email del usuario -->
+            <div class="user-info">
+                <p>📧 <span id="userEmail"></span></p>
+            </div>
+            
+            <!-- Campo de entrada para el código OTP -->
+            <div class="form-group">
+                <label for="otpInput">Código OTP</label>
+                <input type="text" id="otpInput" maxlength="6" placeholder="123456" pattern="[0-9]{6}" required>
+            </div>
+            
+            <!-- Mensaje de error si el código es incorrecto -->
+            <div id="errorMessage" class="error-message hidden"></div>
+            
+            <!-- Contador de tiempo restante para el OTP -->
+            <div class="timer">
+                <p>⏱️ Tiempo restante: <span id="timer">10:00</span></p>
+            </div>
+            
+            <!-- Botones de acción -->
+            <button id="verifyBtn" class="btn btn-primary">Verificar Código</button>
+            <button id="backBtn" class="btn btn-link">← Volver al Login</button>
+        </div>
+    </div>
+
+    <script src="verify.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+/* Reset básico y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body - fondo blanco y fuente moderna */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal centrado */
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* Tarjeta principal con sombra y bordes redondeados */
+.card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Títulos principales con color azul */
+h1 {
+    color: #2563eb;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: #2563eb;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Subtítulos y texto de ayuda */
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Grupos de formulario con espaciado */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Etiquetas de campos de formulario */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Campos de entrada de texto */
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Estado focus para inputs */
+.form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Estilos de botones base */
+.btn {
+    width: 100%;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+/* Botón primario - azul */
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Botón secundario - gris */
+.btn-secondary {
+    background-color: #6b7280;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+/* Botón de juego - verde brillante */
+.btn-game {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    font-size: 18px;
+    padding: 16px 24px;
+}
+
+.btn-game:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+/* Botón de logout - rojo */
+.btn-logout {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626;
+}
+
+/* Botón tipo link */
+.btn-link {
+    background: transparent;
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.btn-link:hover {
+    background: #f3f4f6;
+}
+
+/* Área de visualización del código OTP */
+.otp-display {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f9ff;
+    border-radius: 12px;
+    border: 2px solid #2563eb;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Mensaje de éxito */
+.success-message {
+    color: #059669;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Código OTP grande y destacado */
+.otp-code {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.otp-code span {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Texto informativo */
+.info-text {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Información del usuario */
+.user-info {
+    background: #f3f4f6;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-info p {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Mensaje de error */
+.error-message {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #fecaca;
+}
+
+/* Temporizador */
+.timer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: #fef3c7;
+    border-radius: 8px;
+}
+
+.timer p {
+    color: #92400e;
+    font-weight: 600;
+}
+
+/* Estilos específicos del Dashboard */
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Sección de monedas con estilo destacado */
+.coins-section {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.coin-display {
+    text-align: center;
+    color: white;
+}
+
+.coin-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.coin-amount {
+    font-size: 48px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.coin-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Sección de juego */
+.game-section {
+    margin-bottom: 30px;
+}
+
+/* Sección de consejos */
+.tips-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Cada consejo individual */
+.tip-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tip-item p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Sección de logout */
+.logout-section {
+    margin-top: 30px;
+}
+
+/* Responsive - diseño móvil optimizado */
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .otp-code span {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+    
+    .coin-amount {
+        font-size: 36px;
+    }
+}
